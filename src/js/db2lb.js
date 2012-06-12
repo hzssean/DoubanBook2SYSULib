@@ -1,8 +1,10 @@
 /* ***  This chrome extensions is created by  irachex (Huayi Zhang) <irachex@gmail.com> firstly which works in Fudan Uni
 *-versity Library . I have made it work for GDUFS Library and got the author's permission to modify it .  
 * If you find any bugs ,you can fix it yourself  & it is recommended to inform me of that .  Enjoy it :)
-* David Chen  <chendahui007@gmail.com>    10 Jun,2012 
+* David Chen  <chendahui007@gmail.com>    10 Jun,2012
+* Piandan Zheng <zhengpiaodan@gmail.com>
 */
+
 
 // change this to make it suitable for your school Library
 var base_search_url = "http://opac.gdufs.edu.cn:8991/F/?func=find-b&find_base=GWD01&find_code=WRD&request={{data}}";
@@ -44,10 +46,11 @@ else if( url.indexOf('doulist')!=-1 ){
 }
 
 // System's Book List Page : tag  
-// obiviously there is a bug in the following code but I don't know how to fixed it now .Maybe you can do that.
 else if( url.indexOf('tag')!=-1 ){
     $('div.article table').each(function(){
         var keyword = $('div.pl2 a', this).html();        
-        $('td p span.rr', this).prepend(getLibraryButton(keyword));
+        var kw = keyword.split("<span");
+        var kword = kw[0];
+        $('td p span.rr', this).prepend(getLibraryButton(kword));
     });
 }

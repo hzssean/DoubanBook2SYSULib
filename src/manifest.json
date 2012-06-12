@@ -1,6 +1,6 @@
 {
   "name": "DoubanBook2GWLib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Show GDUFS library status of douban books",
   "content_scripts": [{
       "matches": ["http://book.douban.com/*"],
