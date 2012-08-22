@@ -1,6 +1,6 @@
 {
   "name": "DoubanBook2SYSULib",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Show SYSU library status of douban books",
   "content_scripts": [{
       "matches": ["http://book.douban.com/*"],
