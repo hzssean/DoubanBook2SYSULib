@@ -1,13 +1,13 @@
 {
-  "name": "DoubanBook2GWLib",
-  "version": "1.0.2",
-  "description": "Show GDUFS library status of douban books",
+  "name": "DoubanBook2SYSULib",
+  "version": "1.0.3",
+  "description": "Show SYSU library status of douban books",
   "content_scripts": [{
       "matches": ["http://book.douban.com/*"],
       "js": ["js/jquery.js", "js/db2lb.js"]
   }],
   "permissions" : [
-    "tabs", "http://opac.gdufs.edu.cn:8991/F"
+    "tabs", "http://202.116.64.108:8991/*"
   ],
   "icons" : {
     "48" : "icon-48.png",
