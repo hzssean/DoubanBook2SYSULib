@@ -12,5 +12,6 @@
   "icons" : {
     "48" : "icon-48.png",
     "128" : "icon-128.png"
-  }
+  },
+  "update_url": "https://github.com/zhchbin/DoubanBook2SYSULib/blob/master/release/updates.xml"
 }
