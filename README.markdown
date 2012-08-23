@@ -5,3 +5,6 @@
 
 ##Version Information
 * DoubanBook2SYSULib, this chrome extensions is created by irachex(Huayi Zhang) firstly which works in Fudan University Library. And then it is made to work for the GDUFS Library by David Chen and his fellow Piandan Zheng. And then, I develop it to work for SYSU guys. And who is me?
+
+##Download 
+[Click me to download this extension](https://raw.github.com/zhchbin/DoubanBook2SYSULib/master/release/DoubanBook2SYSULib.crx)
