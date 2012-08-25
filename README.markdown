@@ -8,9 +8,3 @@
 
 ##Download 
 >[Click me to download this extension](https://raw.github.com/zhchbin/DoubanBook2SYSULib/master/release/DoubanBook2SYSULib.crx)
-
-##Bookmarklet
->[Drag me to the bookmark of your browser Or Add][1](Do not support IE)
-
-[1]:javascript:(function(){jsCode=document.createElement('script');jsCode.src='https://raw.github.com/zhchbin/DoubanBook2SYSULib/master/src/js/db2lb.js';jsCode.type='text/javascript';document.body.appendChild(jsCode);})(); 
-
