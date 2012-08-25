@@ -14,4 +14,3 @@
 
 [1]:javascript:(function(){jsCode=document.createElement('script');jsCode.src='https://raw.github.com/zhchbin/DoubanBook2SYSULib/master/src/js/db2lb.js';jsCode.type='text/javascript';document.body.appendChild(jsCode);})(); 
 
-
