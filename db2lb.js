@@ -1,18 +1,9 @@
-/*	DoubanBook2SYSULib
- * This chrome extensions is created by irachex (Huayi Zhang)<irachex@gmail.com>
- * firstly which works in Fudan University Library. And then it is made to work 
- * for the GDUFS Library by David Chen<chendahui007@gmail.com> and his fellow
- * Piandan Zheng<zhengpiaodan@gmail.com>. And then, zhchbin develop it to work for
- * SYSU guys. And, I'm will.
- */
-
 (function() {
 
 	if(navigator.appVersion.indexOf("MSIE 6")>-1){
 		window.open("http://iqshu.com/Other/noIE6");
 		return false;
 	}
-	// change this to make it suitable for your school Library
 	var base_search_url = "http://202.116.64.108:8991/F/?func=find-b&find_base=GWD01&find_code=WRD&request={{data}}";
 
 	function getLibraryButton(keyword) {
@@ -98,13 +89,12 @@
 				for (var i = tables.length - 1; i >= 0; i--) {
 					var keyword = _c("pl2", tables[i], "div")[0].getElementsByTagName("a")[0].innerHTML;
 					var span = _c("rr", tables[i].getElementsByTagName("td")[1], "span")[0];
-					var stardiv = tables[i].getElementsByTagName("div")[1];
 					if (span) {
 						span.insertBefore(getLibraryButton(keyword), span.getElementsByTagName("a")[0])
 					} else {
 						var button = getLibraryButton(keyword);
 						button.getElementsByTagName("a")[0].style.cssText += " float:none;";
-						stardiv.appendChild(button)
+						tables[i].getElementsByTagName("td")[1].appendChild(button);
 					}
 				}
 			} else {
@@ -114,13 +104,12 @@
 						var keyword_html = _c("pl2", tables[i], "div")[0].getElementsByTagName("a")[0].innerHTML.toLowerCase();
 						var keyword = keyword_html.split("<span")[0];
 						var span = _c("rr", tables[i].getElementsByTagName("td")[1], "span")[0];
-						var stardiv = tables[i].getElementsByTagName("div")[1];
 						if (span) {
 							span.insertBefore(getLibraryButton(keyword), span.getElementsByTagName("a")[0])
 						} else {
 							var button = getLibraryButton(keyword);
 							button.getElementsByTagName("a")[0].style.cssText += " float:none;";
-							stardiv.appendChild(button)
+							tables[i].getElementsByTagName("td")[1].appendChild(button);
 						}
 					}
 				}
